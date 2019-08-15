@@ -24,6 +24,10 @@
     .swiper-pagination {
         font-size: 1rem;
     }
+    .alert.alert-primary{
+        left: 15%;
+        right: 15%;
+    }
 }
 
 /*Extra Small Devices, Phones*/
@@ -40,6 +44,10 @@
         width: 75vw;
         height: 65vh;
 
+    }
+    .alert.alert-primary{
+        left: 8px;
+        right: 8px;
     }
 }
 

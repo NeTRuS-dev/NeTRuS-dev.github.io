@@ -114,7 +114,7 @@ footer {
     /*text-align: center;*/
     color: black !important;
     border-radius: 25%;
-    padding: 0 0!important;
+    padding: 0 0 !important;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -168,4 +168,16 @@ body.gridbody div {
     margin-right: auto;
 }
 
+.btn.btn-primary {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+}
 
+.alert.alert-primary {
+    position: fixed;
+    top: 8px;
+    left: 25%;
+    right: 25%;
+
+}
