@@ -1,0 +1,171 @@
+@font-face {
+    font-family: Abril Fatface;
+    src: local("fonts/AbrilFatface-Regular.ttf");
+}
+
+.navbar {
+    border-radius: 5vw;
+    background: #7abaff;
+    font-family: Abril Fatface, cursive;
+}
+
+body {
+    margin: 8px;
+    /*background-color: rgba(0, 128, 0, 0.6);*/
+    /*background-imagrid-containerge: url("https://cdn.fishki.net/upload/post/2017/03/19/2245758/tn/02-funny-cat-wallpapercat-wallpaper.jpg");*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+}
+
+li {
+    color: black;
+    /*font-family: Roboto;*/
+}
+
+
+.mainBox {
+    border: 1px solid black;
+
+}
+
+
+.flex-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    /*grid-area: flextest;*/
+
+
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.2fr 2fr 0.2fr;
+    /*grid-template-areas: "header header" "section flextest" "footer footer";*/
+    background-color: rgba(0, 128, 0, 0.6);
+
+}
+
+header {
+    /*grid-area: header;*/
+    border-bottom: none !important;
+
+}
+
+
+footer {
+    /*grid-area: footer;*/
+    border-top: none !important;
+    background: cadetblue;
+}
+
+.swiper-container {
+    width: 60vw;
+    height: 80vh;
+    border-radius: 2rem;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.swiper-pagination {
+    font-size: 2rem;
+}
+
+.alert {
+    text-align: center;
+}
+
+.nav-item {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.nav-item a.nav-link {
+    /*height: 5rem;*/
+    line-height: 3rem;
+    /*text-align: center;*/
+    color: black !important;
+    border-radius: 25%;
+    padding: 0 0!important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.nav-item a.nav-link:hover {
+    background: #007bff;
+}
+
+.gridbody {
+    margin: 8px;
+    display: grid;
+    font-weight: 700;
+
+
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-areas: "head head head" "aside1 aside2 leftinfo" "foot foot foot";
+}
+
+.head {
+    grid-area: head;
+}
+
+.aside1 {
+    grid-area: aside1;
+}
+
+.aside2 {
+    grid-area: aside2;
+}
+
+.info {
+    grid-area: leftinfo;
+}
+
+.foot {
+    grid-area: foot;
+}
+
+body.gridbody div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
