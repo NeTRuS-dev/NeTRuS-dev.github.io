@@ -64,7 +64,10 @@
 @media only screen and (max-width: 768px) {
   .gridbody {
 
+    -ms-grid-rows: 0.5fr 1fr 1fr 0.5fr;
+
     grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    -ms-grid-columns: 2.5fr 1fr;
     grid-template-columns: 2.5fr 1fr;
     grid-template-areas: "head head" "aside1 leftinfo" "aside2 leftinfo" "foot foot";
   }
@@ -73,6 +76,7 @@
 /*Extra Small Devices, Phones*/
 @media only screen and (max-width: 488px) {
   .gridbody {
+    -ms-grid-columns: 1.5fr 1fr;
     grid-template-columns: 1.5fr 1fr;
   }
 
@@ -83,7 +87,10 @@
 
   .gridbody {
 
+    -ms-grid-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+
     grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "head" "aside1" "aside2" "leftinfo""foot";
   }
