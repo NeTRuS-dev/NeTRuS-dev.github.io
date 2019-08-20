@@ -26,6 +26,8 @@ $borderBlack: 1px solid black;
   border-radius: 5vw;
   background: #7abaff;
   font-family: Abril Fatface, cursive;
+  z-index: 2;
+
 }
 
 
@@ -47,10 +49,21 @@ li {
   /*font-family: Roboto;*/
 }
 
+.navbar {
+  padding: 0;
+  -webkit-transform: translateY((100vh*0.1/30));
+  -ms-transform: translateY((100vh*0.1/30));
+  transform: translateY((100vh*0.1/30));
+}
 
 .mainBox {
   border: 1px solid black;
 
+  .collapse.navbar-collapse {
+    height: 100%;
+
+
+  }
 }
 
 
@@ -79,6 +92,52 @@ li {
   /*grid-template-areas: "header header" "section flextest" "footer footer";*/
   background-color: rgba(0, 128, 0, 0.5);
 
+  header.mainBox {
+    .container-fluid {
+      width: 85% !important;
+    }
+
+    .dropbtn {
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      position: relative;
+      display: block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 10%;
+      background-color: #f9f9f9;
+      border-radius: .5rem;
+      width: 25vw;
+      z-index: 3;
+
+    }
+
+    .dropdown-content a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      border-radius: .5rem;
+      padding: .25rem 1.5rem;
+      width: 100%;
+
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1
+    }
+
+
+  }
 }
 
 header {
@@ -146,7 +205,7 @@ footer {
     line-height: 3rem;
     /*text-align: center;*/
     color: black !important;
-    border-radius: 25%;
+    //border-radius: 25%;
     padding: 0 0 !important;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -271,9 +330,10 @@ footer {
 @media (max-width: 327.98px) {
   .responsiveBootstrapWrapper {
     .tonewlinew {
-      display: block!important;
+      display: block !important;
     }
-    .col-10.row, .info{
+
+    .col-10.row, .info {
       -ms-flex-preferred-size: 100% !important;
       flex-basis: 100% !important;
       width: 100% !important;
@@ -281,12 +341,14 @@ footer {
 
     }
 
-    .head,.foot{
-      height: (100vh/4)/2!important;
+    .head, .foot {
+      height: (100vh/4)/2 !important;
     }
-    .main{
+
+    .main {
       height: (100vh/4)*3 !important;
     }
+
     .aside1, .aside2, .info {
       height: (75vh/3) !important;
       width: 100%;
@@ -298,12 +360,14 @@ footer {
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 328px) and (max-width: 767.98px) {
   .responsiveBootstrapWrapper {
-    .head,.foot{
-      height: (100vh/3)/2!important;
+    .head, .foot {
+      height: (100vh/3)/2 !important;
     }
-    .main{
+
+    .main {
       height: (100vh/3)*2 !important;
     }
+
     .aside1, .aside2 {
       height: 50%;
       width: 100%;

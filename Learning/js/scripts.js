@@ -13,4 +13,15 @@ $(document).ready(function () {
 
     });
 
+    $(".dropbtn").click(function () {
+
+        $(this).parent().siblings().children('.dropdown-content').slideUp();
+        $(this).siblings(".dropdown-content").slideToggle();
+    });
+    $(window).resize(function () {
+        if ($(this).width() < 768) {
+            $('.dropdown-content').slideUp();
+        }
+    });
+
 });
